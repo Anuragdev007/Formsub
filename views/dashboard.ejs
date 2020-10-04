@@ -1,0 +1,27 @@
+
+
+   
+ <h1 class="mt-4">Welcome <span style="color:aqua;"><%= name %></span></h1>
+
+
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <div class="form-group" >
+        <label for="title"  class="col-form-label col-form-label-lg">Title</label>
+        <input type="text" name="title" id="title" class="form-control form-control-lg" style="border: 2px solid aqua;" placeholder="Title of yor image">
+    </div>
+
+        <div class="form-group">
+            <label for="image"  class="col-form-label col-form-label-lg">Image</label>
+            <input type="file" name="image" id="image" class="form-control form-control-lg" style="border: 2px solid aqua;">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-outline-primary" style="margin-left: 40%;">upload</button>
+        <a href="/users/logout" class="btn btn-outline-primary">Logout</a>
+        
+</form>
+
+  
+
